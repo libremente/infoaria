@@ -1,0 +1,71 @@
+publiccode-yaml-version: "http://w3id.org/publiccode/version/0.1"
+
+name: InfoAria Arpa Puglia
+applicationSuite: InfoAria
+url: "https://github.com/arpa-puglia/infoaria.git"
+landingURL: "https://github.com/arpa-puglia/infoaria"
+
+softwareVersion: "1.0"
+releaseDate: "2018-06-01"
+
+platforms:
+  - linux
+  - windows
+  - mac
+
+tags:
+  - air pollutant
+  - infoaria
+  - eea
+
+usedBy:
+  - A.R.P.A. Puglia
+
+developmentStatus: beta
+
+softwareType:
+  type: "standalone"
+
+intendedAudience:
+  onlyFor:
+    - environmenteal agencies
+  countries:
+    - it
+
+description:
+  eng:
+    localisedName: InfoAria Arpa Puglia
+    shortDescription: "A really interesting software."
+    longDescription: >
+          Very long description of this software, also split
+          on multiple rows. You should note what the software
+          is and why one should need it.
+
+legal:
+  license: GPL-3.0-or-later
+  mainCopyrightOwner: Nicola Inchingolo
+  repoOwner: Nicola Inchingolo
+
+maintenance:
+  type: "internal"
+
+  contacts:
+    - name: Nicola Inchingolo
+      email: "n.inchingolo@arpa.puglia.it"
+      affiliation: A.R.P.A. Puglia
+      phone: +39 080 5460358
+
+localisation:
+  localisationReady: no
+    
+dependencies:
+  open:
+    - name: YAML
+      optional: no
+
+it:
+  accessibile: yes
+  interoperabile: yes
+
+  riuso:
+    codiceIPA: ARPAP
