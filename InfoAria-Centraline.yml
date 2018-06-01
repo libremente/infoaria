@@ -1,0 +1,1338 @@
+---
+##### DEM. REPORTS #####
+demonstration_reports:
+   ME: http://metone.com/air-quality-particulate-measurement/regulatory/bam-1020/
+   SA: http://www.environnement-sa.com/products-page/en/air-quality-monitoring-en/particulates-samplers-and-analyzers-en/mp101m-with-cpm-option/
+   SW: http://www.fai-instruments.com/index.php/it/main-page-ita/prodotti/swam
+   SD: http://www.fai-instruments.com/index.php/it/main-page-ita/prodotti/swam-dual-channel
+   IC: http://www.indev-cheaper.it/Brochure/immissioni%20monit%20continuo/SARTEC%20OPSIS%20PM%2010_PM2,5-SM200.pdf
+   TF: https://www.thermofisher.com/order/catalog/product/5030I
+
+##### INQUINANTI #####
+inquinanti:
+   Benzene:
+      codice_ispra: 20
+      tipo_misura: automatic
+      metodo_misura: GC-FID
+      stima_incertezza: 25
+      data_quality: { detection_limit: 0.1, uom: ug.m-3, documentation: -9999, qa_report: in preparation }
+   BENZENE:
+      codice_ispra: 20
+      tipo_misura: automatic
+      metodo_misura: GC-FID
+      stima_incertezza: 25
+      data_quality: { detection_limit: 0.1, uom: ug.m-3, documentation: -9999, qa_report: in preparation }
+   CO:
+      codice_ispra: 10
+      tipo_misura: automatic
+      metodo_misura: IR-GFC
+      stima_incertezza: 15
+      data_quality: { detection_limit: 0.1, uom: mg.m-3, documentation: -9999, qa_report: in preparation }
+   NO2:
+      codice_ispra: 8
+      tipo_misura: automatic
+      metodo_misura: chemi
+      stima_incertezza: 15
+      data_quality: { detection_limit: 0.1, uom: ug.m-3, documentation: -9999, qa_report: in preparation }
+   NOX:
+      codice_ispra: 9
+      tipo_misura: automatic
+      metodo_misura: chemi
+      stima_incertezza: 15
+      data_quality: { detection_limit: 0.1, uom: ug.m-3, documentation: -9999, qa_report: in preparation }
+   O3:
+      codice_ispra: 7
+      tipo_misura: automatic
+      metodo_misura: UV-P
+      stima_incertezza: 15
+      data_quality: { detection_limit: 0.1, uom: ug.m-3, documentation: -9999, qa_report: in preparation }
+   PM10:
+      codice_ispra: 5
+      tipo_misura: automatic
+      metodo_misura: BETA
+      stima_incertezza: 25
+      demonstration_reports: [ ME, SA, SW, SD, IC, TF ]
+      data_quality: { detection_limit: 0.1, uom: ug.m-3, documentation: -9999, qa_report: in preparation }
+   PM2.5:
+      codice_ispra: 6001
+      tipo_misura: automatic
+      metodo_misura: BETA
+      stima_incertezza: 25
+      demonstration_reports: [ ME, SW, SD, TF ]
+      data_quality: { detection_limit: 0.1, uom: ug.m-3, documentation: -9999, qa_report: in preparation }
+   SO2:
+      codice_ispra: 1
+      tipo_misura: automatic
+      metodo_misura: UV-FL
+      stima_incertezza: 15
+      data_quality: { detection_limit: 0.1, uom: ug.m-3, documentation: -9999, qa_report: in preparation }
+   # METALLI #
+   Pb:
+      codice_ispra: 5012
+      tipo_misura: active
+      tecnica_analitica: ICP-MS
+      metodo_campionamento: LVSauto2.3
+      stima_incertezza: 15
+      data_quality: { detection_limit: 0.4, uom: ug.m-3, documentation: -9999, qa_report: in preparation }
+   Cd:
+      codice_ispra: 5014
+      tipo_misura: active
+      tecnica_analitica: ICP-MS
+      metodo_campionamento: LVSauto2.3
+      metodo_misura: UV-FL
+      stima_incertezza: 15
+      data_quality: { detection_limit: 0.02, uom: ng.m-3, documentation: -9999, qa_report: in preparation }
+   Ni:
+      codice_ispra: 5015
+      tipo_misura: active
+      tecnica_analitica: ICP-MS
+      metodo_campionamento: LVSauto2.3
+      metodo_misura: UV-FL
+      stima_incertezza: 15
+      data_quality: { detection_limit: 0.7, uom: ng.m-3, documentation: -9999, qa_report: in preparation }
+   As:
+      codice_ispra: 5018
+      tipo_misura: active
+      tecnica_analitica: ICP-MS
+      metodo_campionamento: LVSauto2.3
+      metodo_misura: UV-FL
+      stima_incertezza: 15
+      data_quality: { detection_limit: 0.2, uom: ng.m-3, documentation: -9999, qa_report: in preparation }
+   BaP:
+      codice_ispra: 5029
+      tipo_misura: active
+      tecnica_analitica: GC-MSa
+      metodo_campionamento: LVSauto2.3
+      metodo_misura: UV-FL
+      stima_incertezza: 15
+      data_quality: { detection_limit: 0.01, uom: ng.m-3, documentation: -9999, qa_report: in preparation }
+
+
+##### RETI #####
+reti:
+   IT218A:
+      nome: COMUNE DI BARI
+      tipo: urban
+      data_inizio: 2000-05-03
+   IT219A:
+      nome: RETE SIMAGE
+      tipo: regional
+      data_inizio: 2004-05-01
+   IT223A:
+      nome: REGIONE PUGLIA
+      tipo: regional
+      data_inizio: 2004-05-01
+   IT229A:
+      nome: COMUNE DI LECCE
+      tipo: urban
+      data_inizio: 2004-05-01
+   IT230A:
+      nome: PROVINCIA DI TARANTO
+      tipo: regional
+      data_inizio: 2004-01-01
+   IT236A:
+      nome: RETE SIMAGE BRINDISI
+      tipo: regional
+      data_inizio: 2004-05-01
+   IT237A:
+      nome: PROVINCIA DI LECCE
+      tipo: regional
+      data_inizio: 2004-01-01
+   IT247A:
+      nome: PROVINCIA DI BARI
+      tipo: regional
+      data_inizio: 2006-07-01
+   IT254A:
+      nome: PROVINCIA DI BRINDISI
+      tipo: regional
+      data_inizio: 2009-07-01
+   IT259A:
+      nome: COMUNE DI BARLETTA
+      tipo: urban
+      data_inizio: 2010-01-01
+   IT263A:
+      nome: ENPLUS-CTE-S.SEVERO-FG
+      tipo: local
+      data_inizio: 2010-04-01
+   IT269A:
+      nome: ENIPOWER
+      tipo: regional
+      data_inizio: 2013-01-01
+   IT270A:
+      nome: ENEL_EDIPOWER
+      tipo: regional
+      data_inizio: 2013-01-01
+   IT271A:
+      nome: ITALGREEN
+      tipo: regional
+      data_inizio: 2012-09-01
+   IT272A:
+      nome: SORGENIA
+      tipo: regional
+      data_inizio: 2009-01-01
+   IT273A:
+      nome: ENEL BRINDISI
+      tipo: regional
+      data_inizio: 2013-01-01
+
+##### STAZIONI #####
+stazioni:
+   IT1598A:
+      nome: Manfredonia VIA DEI MANDORLI
+      tipo_area: suburban
+      id_stazione_n: 1607176
+      indirizzo: via dei mandorli
+      altitudine: 20.0
+      id_rete: IT223A
+      coordinate: 41.628329999999998 15.90944
+      tipo_stazione: traffic
+      data_inizio: 2004-05-01
+      netcd: 111
+      statcd: 22
+      tipo_stazione: traffic
+      distanceJunction: 20.0
+      trafficVolume: 500
+      heavy-dutyFraction: 0.1
+      trafficSpeed: 30.0
+      streetWidth: 10.0
+      heightFacades: 10.0
+      buildingDistance: 10.0
+      kerbDistance: 10.0
+      inquinanti:
+         - {id: 8, nome: BENZENE, inizio: 2005-01-01}
+         - {id: 6, nome: CO, inizio: 2005-01-01}
+         - {id: 4, nome: NO2, inizio: 2005-01-01}
+         - {id: 26, nome: PM10, inizio: 2005-04-01, eq: SW}
+   IT1601A:
+      nome: Monte S. Angelo SUOLO CIUFFREDA
+      tipo_area: rural
+      id_stazione_n: 1607175
+      indirizzo: SUOLO CIUFFREDA
+      altitudine: 30.0
+      id_rete: IT223A
+      coordinate: 41.665280000000003 15.945
+      tipo_stazione: background
+      data_inizio: 2004-05-01
+      netcd: 111
+      statcd: 25
+      tipo_stazione: background
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2005-01-01}
+         - {id: 2, nome: NOX, inizio: 2005-01-01}
+         - {id: 7, nome: O3, inizio: 2009-06-01}
+         - {id: 6, nome: PM10, inizio: 2009-04-27, eq: SW}
+         - {id: 5029, nome: BaP, inizio: 2012-01-01}
+   IT1603A:
+      nome: molfetta VERDI
+      tipo_area: urban
+      id_stazione_n: 1607276
+      indirizzo: PIAZZA VERDI
+      altitudine: 10.0
+      id_rete: IT223A
+      coordinate: 41.200277999999997 16.605
+      tipo_stazione: traffic
+      data_inizio: 2004-05-01
+      netcd: 111
+      statcd: 4
+      tipo_stazione: traffic
+      distanceJunction: 100.0
+      trafficVolume: 2000
+      heavy-dutyFraction: 0.2
+      trafficSpeed: 40.0
+      streetWidth: 10.0
+      heightFacades: 15.0
+      buildingDistance: 20.0
+      kerbDistance: 10.0
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2004-05-01}
+         - {id: 14, nome: PM10, inizio: 2005-04-01, eq: SW}
+         - {id: 5029, nome: BaP, inizio: 2014-01-01}
+   IT1606A:
+      nome: Caldarola
+      tipo_area: urban
+      id_stazione_n: 16072
+      indirizzo: via caldarola
+      altitudine: 10.0
+      id_rete: IT223A
+      coordinate: 41.113610999999999 16.888055999999999
+      tipo_stazione: traffic
+      data_inizio: 2004-05-01
+      netcd: 111
+      statcd: 3
+      tipo_stazione: traffic
+      distanceJunction: 100.0
+      trafficVolume: 5000
+      heavy-dutyFraction: 0.2
+      trafficSpeed: 30.0
+      streetWidth: 8.0
+      heightFacades: 3.0
+      buildingDistance: 20.0
+      kerbDistance: 10.0
+      inquinanti:
+         - {id: 8, nome: BENZENE, inizio: 2004-05-01}
+         - {id: 6, nome: CO, inizio: 2004-05-01}
+         - {id: 4, nome: NO2, inizio: 2004-05-01}
+         - {id: 25, nome: PM10, inizio: 2005-04-01, eq: SD}
+         - {id: 33, nome: PM2.5, inizio: 2015-02-07, eq: SD}
+   IT1607A:
+      nome: taranto WIND
+      tipo_area: suburban
+      id_stazione_n: 1607379
+      indirizzo: SS 7
+      altitudine: 10.0
+      id_rete: IT219A
+      coordinate: 40.526110000000003 17.17361
+      tipo_stazione: traffic
+      data_inizio: 2004-05-01
+      netcd: 333
+      statcd: 33
+      tipo_stazione: traffic
+      distanceJunction: 100.0
+      trafficVolume: 5000
+      heavy-dutyFraction: 0.5
+      trafficSpeed: 60.0
+      streetWidth: 20.0
+      heightFacades: 3.0
+      buildingDistance: 3.0
+      kerbDistance: 50.0
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2004-05-01}
+         - {id: 5, nome: PM10, inizio: 2004-05-01, frequenza: biorario, eq: SA}
+         - {id: 1, nome: SO2, inizio: 2004-05-01}
+   IT1608A:
+      nome: STATTE
+      tipo_area: suburban
+      id_stazione_n: 1607376
+      indirizzo: VIA DELLE SORGENTI
+      altitudine: 10.0
+      id_rete: IT223A
+      coordinate: 40.5625 17.203330000000001
+      tipo_stazione: industrial
+      data_inizio: 2004-05-01
+      netcd: 333
+      statcd: 17
+      tipo_stazione: industrial
+      distanceSource: 5000.0
+      industrialEmissions: -9999.0
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2004-05-01}
+         - {id: 6, nome: PM10, inizio: 2005-03-01, fine: 2017-11-30}
+         - {id: 13, nome: PM10, inizio: 2017-12-01, frequenza: biorario, eq: SA}
+         - {id: 1, nome: SO2, inizio: 2004-05-01}
+         - {id: 5018, nome: As, inizio: 2015-04-01}
+         - {id: 5014, nome: Cd, inizio: 2015-04-01}
+         - {id: 5015, nome: Ni, inizio: 2015-04-01}
+         - {id: 5012, nome: Pb, inizio: 2015-04-01}
+         - {id: 5029, nome: BaP, inizio: 2015-04-01}
+   IT1609A:
+      nome: Taranto CISI
+      tipo_area: suburban
+      id_stazione_n: 1607378
+      indirizzo: CISI
+      altitudine: 10.0
+      id_rete: IT219A
+      coordinate: 40.52111 17.2536
+      tipo_stazione: industrial
+      data_inizio: 2004-05-01
+      netcd: 333
+      statcd: 34
+      tipo_stazione: industrial
+      distanceSource: 3000.0
+      industrialEmissions: -9999.0
+      inquinanti:
+         - {id: 21, nome: Benzene, inizio: 2005-05-01}
+         - {id: 4, nome: NO2, inizio: 2005-01-01}
+         - {id: 7, nome: PM10, inizio: 2004-05-01, eq: SD}
+         - {id: 8, nome: PM2.5, inizio: 2004-05-01, eq: SD}
+         - {id: 1, nome: SO2, inizio: 2005-05-01}
+   IT1610A:
+      nome: taranto SAN VITO
+      tipo_area: urban
+      id_stazione_n: 1607374
+      indirizzo: san vito
+      altitudine: 10.0
+      id_rete: IT223A
+      coordinate: 40.42333 17.225280000000001
+      tipo_stazione: background
+      data_inizio: 2004-05-01
+      netcd: 333
+      statcd: 18
+      tipo_stazione: background
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2004-05-01}
+         - {id: 13, nome: PM10, inizio: 2009-01-01, eq: SW}
+         - {id: 17, nome: O3, inizio: 2017-01-01}
+   IT1611A:
+      nome: taranto MACHIAVELLI
+      tipo_area: suburban
+      id_stazione_n: 1607377
+      indirizzo: via machiavelli
+      altitudine: 10.0
+      id_rete: IT223A
+      coordinate: 40.488610000000001 17.225829999999998
+      tipo_stazione: industrial
+      data_inizio: 2004-05-01
+      netcd: 333
+      statcd: 19
+      tipo_stazione: industrial
+      distanceSource: 500.0
+      industrialEmissions: -9999.0
+      inquinanti:
+         - {id: 19, nome: BENZENE, inizio: 2004-05-01}
+         - {id: 5, nome: CO, inizio: 2010-01-01}
+         - {id: 4, nome: NO2, inizio: 2004-05-01}
+         - {id: 9, nome: PM10, inizio: 2004-05-01, eq: SD}
+         - {id: 26, nome: PM2.5, inizio: 2008-01-01, eq: SD}
+         - {id: 1, nome: SO2, inizio: 2004-05-01}
+         - {id: 5018, nome: As, inizio: 2010-01-01}
+         - {id: 5014, nome: Cd, inizio: 2010-01-01}
+         - {id: 5015, nome: Ni, inizio: 2010-01-01}
+         - {id: 5029, nome: BaP, inizio: 2010-01-01}
+         - {id: 5012, nome: Pb, inizio: 2010-01-01}
+   IT1613A:
+      nome: taranto ADIGE
+      tipo_area: urban
+      id_stazione_n: 1607375
+      indirizzo: via alto adige
+      altitudine: 10.0
+      id_rete: IT223A
+      coordinate: 40.46055556 17.26333
+      tipo_stazione: traffic
+      data_inizio: 2004-05-01
+      netcd: 333
+      statcd: 20
+      tipo_stazione: traffic
+      distanceJunction: 50.0
+      trafficVolume: 2000
+      heavy-dutyFraction: 0.1
+      trafficSpeed: 30.0
+      streetWidth: 10.0
+      heightFacades: 10.0
+      buildingDistance: 20.0
+      kerbDistance: 20.0
+      inquinanti:
+         - {id: 15, nome: BENZENE, inizio: 2009-05-01}
+         - {id: 4, nome: NO2, inizio: 2004-05-01}
+         - {id: 13, nome: PM10, inizio: 2008-10-01, eq: SD}
+         - {id: 14, nome: PM2.5, inizio: 2008-10-10, eq: SD}
+         - {id: 1, nome: SO2, inizio: 2004-05-01}
+         - {id: 5029, nome: BaP, inizio: 2010-01-01}
+   IT1614A:
+      nome: TALSANO
+      tipo_area: urban
+      id_stazione_n: 1607380
+      indirizzo: talsano
+      altitudine: 10.0
+      id_rete: IT219A
+      coordinate: 40.411940000000001 17.28389
+      tipo_stazione: background
+      data_inizio: 2004-05-01
+      netcd: 333
+      statcd: 31
+      tipo_stazione: background
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2010-01-01}
+         - {id: 2, nome: NOX, inizio: 2010-01-01}
+         - {id: 6, nome: O3, inizio: 2009-05-01}
+         - {id: 5, nome: PM10, inizio: 2004-05-01, eq: SW}
+         - {id: 1, nome: SO2, inizio: 2010-01-01}
+         - {id: 5018, nome: As, inizio: 2010-01-01}
+         - {id: 5014, nome: Cd, inizio: 2010-01-01}
+         - {id: 5029, nome: BaP, inizio: 2010-01-01}
+         - {id: 5012, nome: Pb, inizio: 2010-01-01}
+         - {id: 5015, nome: Ni, inizio: 2010-01-01}
+   IT1617A:
+      nome: S. Pancrazio Salentino
+      tipo_area: suburban
+      id_stazione_n: 1607408
+      indirizzo: san pancrazio salentino
+      altitudine: 20.0
+      id_rete: IT223A
+      coordinate: 40.42333 17.84639
+      tipo_stazione: background
+      data_inizio: 2004-05-01
+      netcd: 222
+      statcd: 10
+      tipo_stazione: background
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2004-05-01}
+         - {id: 6, nome: PM10, inizio: 2005-03-01, fine: 2017-11-06, eq: SA}
+         - {id: 11, nome: PM10, inizio: 2017-11-07, frequenza: biorario, eq: SA}
+   IT1618A:
+      nome: Brindisi VIA TARANTO
+      tipo_area: urban
+      id_stazione_n: 1607178
+      indirizzo: via taranto
+      altitudine: 10.0
+      id_rete: IT223A
+      coordinate: 40.63416667 17.94777
+      tipo_stazione: traffic
+      data_inizio: 2004-05-01
+      netcd: 222
+      statcd: 6
+      tipo_stazione: traffic
+      distanceJunction: 20.0
+      trafficVolume: 500
+      heavy-dutyFraction: 0.3
+      trafficSpeed: 40.0
+      streetWidth: 10.0
+      heightFacades: 10.0
+      buildingDistance: 10.0
+      kerbDistance: 5.0
+      inquinanti:
+         - {id: 8, nome: BENZENE, inizio: 2004-05-01}
+         - {id: 6, nome: CO, inizio: 2004-05-01}
+         - {id: 4, nome: NO2, inizio: 2004-05-01}
+         - {id: 27, nome: PM10, inizio: 2004-05-01, eq: SD}
+         - {id: 28, nome: PM2.5, inizio: 2015-09-09, eq: SD}
+   IT1621A:
+      nome: CAVOUR
+      tipo_area: urban
+      id_stazione_n: 1607280
+      indirizzo: corso cavour bari
+      altitudine: 10.0
+      id_rete: IT218A
+      coordinate: 41.123333000000002 16.873332999999999
+      tipo_stazione: traffic
+      data_inizio: 2000-05-03
+      netcd: 111
+      statcd: 15
+      tipo_stazione: traffic
+      distanceJunction: 5.0
+      trafficVolume: 5000
+      heavy-dutyFraction: 0.1
+      trafficSpeed: 20.0
+      streetWidth: 10.0
+      heightFacades: 30.0
+      buildingDistance: 20.0
+      kerbDistance: 6.0
+      inquinanti:
+         - {id: 3, nome: BENZENE, inizio: 2009-07-01}
+         - {id: 1, nome: CO, inizio: 2009-07-01}
+         - {id: 20, nome: NO2, inizio: 2015-01-01}
+         - {id: 2, nome: PM10, inizio: 2015-02-11, eq: SD}
+         - {id: 21, nome: PM2.5, inizio: 2015-02-11, eq: SD}
+   IT1624A:
+      nome: KENNEDY
+      tipo_area: urban
+      id_stazione_n: 1607281
+      indirizzo: via R. KENNEDY BARI
+      altitudine: 10.0
+      id_rete: IT218A
+      coordinate: 41.100555999999997 16.859722000000001
+      tipo_stazione: background
+      data_inizio: 2000-05-03
+      netcd: 111
+      statcd: 6
+      tipo_stazione: background
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2009-01-01}
+         - {id: 1, nome: O3, inizio: 2009-01-01}
+         - {id: 6, nome: PM10, inizio: 2009-01-01, eq: SW}
+         - {id: 2, nome: NOX, inizio: 2017-01-01}
+         - {id: 5029, nome: BaP, inizio: 2012-01-01}
+         - {id: 5012, nome: Pb, inizio: 2012-01-01}
+         - {id: 5015, nome: Ni, inizio: 2012-01-01}
+         - {id: 5018, nome: As, inizio: 2012-01-01}
+         - {id: 5014, nome: Cd, inizio: 2012-01-01}
+   IT1657A:
+      nome: S. Pietro VERNOTICO
+      tipo_area: suburban
+      id_stazione_n: 1607411
+      indirizzo: san pietro vernitico
+      altitudine: 20.0
+      id_rete: IT223A
+      coordinate: 40.48556 18.005559999999999
+      tipo_stazione: industrial
+      data_inizio: 2004-05-01
+      netcd: 222
+      statcd: 9
+      tipo_stazione: industrial
+      distanceSource: 5000.0
+      industrialEmissions: -9999.0
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2004-05-01}
+         - {id: 6, nome: PM10, inizio: 2009-04-01, fine: 2017-11-29}
+         - {id: 8, nome: PM10, inizio: 2017-11-30, frequenza: biorario, eq: SA}
+   IT1658A:
+      nome: TORCHIAROLO
+      tipo_area: suburban
+      id_stazione_n: 1607410
+      indirizzo: piazza don minzoni
+      altitudine: 10.0
+      id_rete: IT223A
+      coordinate: 40.488059999999997 18.053609999999999
+      tipo_stazione: industrial
+      data_inizio: 2004-05-01
+      netcd: 222
+      statcd: 8
+      tipo_stazione: industrial
+      distanceSource: 5000.0
+      industrialEmissions: -9999.0
+      inquinanti:
+         - {id: 16, nome: BENZENE, inizio: 2009-05-01}
+         - {id: 6, nome: CO, inizio: 2004-05-01}
+         - {id: 4, nome: NO2, inizio: 2005-03-01}
+         - {id: 14, nome: PM10, inizio: 2005-03-01, eq: SD}
+         - {id: 24, nome: PM2.5, inizio: 2015-02-16, eq: SD}
+         - {id: 1, nome: SO2, inizio: 2004-05-01}
+   IT1660A:
+      nome: Taranto ARCHIMEDE
+      tipo_area: suburban
+      id_stazione_n: 1607113
+      indirizzo: via archimede
+      altitudine: 10.0
+      id_rete: IT223A
+      coordinate: 40.494439999999997 17.233059999999998
+      tipo_stazione: industrial
+      data_inizio: 2004-05-01
+      netcd: 333
+      statcd: 16
+      tipo_stazione: industrial
+      distanceSource: 500.0
+      industrialEmissions: -9999.0
+      inquinanti:
+         - {id: 6, nome: CO, inizio: 2004-05-01}
+         - {id: 4, nome: NO2, inizio: 2004-05-01}
+         - {id: 8, nome: PM10, inizio: 2015-02-15, eq: SD}
+         - {id: 9, nome: PM2.5, inizio: 2015-02-15, eq: SD}
+         - {id: 1, nome: SO2, inizio: 2004-05-01}
+   IT1663A:
+      nome: Mesagne
+      tipo_area: suburban
+      id_stazione_n: 1607414
+      indirizzo: MESAGNE
+      altitudine: 10.0
+      id_rete: IT223A
+      coordinate: 40.565559999999998 17.808330000000002
+      tipo_stazione: background
+      data_inizio: 2004-05-01
+      netcd: 222
+      statcd: 7
+      tipo_stazione: background
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2004-05-01}
+         - {id: 13, nome: PM10, inizio: 2009-04-01, eq: SW}
+   IT1664A:
+      nome: GUAGNANO - villa baldassarri
+      tipo_area: suburban
+      id_stazione_n: 16075
+      indirizzo: villa baldassarri
+      altitudine: 10.0
+      id_rete: IT223A
+      coordinate: 40.418520000000001 17.964469999999999
+      tipo_stazione: background
+      data_inizio: 2004-05-01
+      netcd: 222
+      statcd: 13
+      tipo_stazione: background
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2005-01-01}
+         - {id: 6, nome: PM10, inizio: 2005-03-01, eq: SW}
+   IT1665A:
+      nome: LECCE - S. M. Cerrate
+      tipo_area: rural
+      id_stazione_n: 1607576
+      indirizzo: ABBAZIA DI SM CERRATE
+      altitudine: 10.0
+      id_rete: IT223A
+      coordinate: 40.458889999999997 18.116109999999999
+      tipo_stazione: background
+      data_inizio: 2004-05-01
+      netcd: 222
+      statcd: 11
+      tipo_stazione: background
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2004-05-01}
+         - {id: 7, nome: O3, inizio: 2004-05-01}
+         - {id: 25, nome: PM10, inizio: 2009-04-01, eq: SD}
+         - {id: 26, nome: PM2.5, inizio: 2015-02-17, eq: SD}
+   IT1666A:
+      nome: Campi Salentina
+      tipo_area: suburban
+      id_stazione_n: 1607584
+      indirizzo: campi salentina
+      altitudine: 10.0
+      id_rete: IT237A
+      coordinate: 40.404440000000001 18.029720000000001
+      tipo_stazione: background
+      data_inizio: 2004-01-01
+      netcd: 222
+      statcd: 46
+      tipo_stazione: background
+      inquinanti:
+         - {id: 3, nome: NO2, inizio: 2009-05-01}
+         - {id: 4, nome: PM10, inizio: 2009-01-01, eq: SW}
+         - {id: 5, nome: PM2.5, inizio: 2009-01-01, eq: SW}
+   IT1679A:
+      nome: Grottaglie
+      tipo_area: suburban
+      id_stazione_n: 1607389
+      indirizzo: scuola
+      altitudine: 200.0
+      id_rete: IT230A
+      coordinate: 40.537779999999998 17.42389
+      tipo_stazione: background
+      data_inizio: 2004-01-01
+      netcd: 333
+      statcd: 27
+      tipo_stazione: background
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2009-01-01}
+         - {id: 6, nome: O3, inizio: 2009-01-01}
+         - {id: 16, nome: PM10, inizio: 2009-01-01, fine: 2017-09-27, eq: SA}
+         - {id: 18, nome: PM10, inizio: 2017-09-28, frequenza: biorario, eq: SA}
+   IT1680A:
+      nome: Martina Franca
+      tipo_area: urban
+      id_stazione_n: 1607388
+      indirizzo: piazza stazione
+      altitudine: 400.0
+      id_rete: IT230A
+      coordinate: 40.700830000000003 17.331939999999999
+      tipo_stazione: traffic
+      data_inizio: 2004-01-01
+      netcd: 333
+      statcd: 26
+      tipo_stazione: traffic
+      distanceJunction: 20.0
+      trafficVolume: 2000
+      heavy-dutyFraction: 0.5
+      trafficSpeed: 30.0
+      streetWidth: 20.0
+      heightFacades: 10.0
+      buildingDistance: 10.0
+      kerbDistance: 20.0
+      inquinanti:
+         - {id: 3, nome: NO2, inizio: 2012-01-01}
+         - {id: 25, nome: PM10, inizio: 2012-01-01, eq: SW}
+         - {id: 20, nome: BENZENE, inizio: 2017-01-01}
+   IT1687A:
+      nome: ARNESANO - Riesci
+      tipo_area: suburban
+      id_stazione_n: 1607578
+      indirizzo: quartiere Riesci
+      altitudine: 10.0
+      id_rete: IT223A
+      coordinate: 40.346269999999997 18.09507
+      tipo_stazione: background
+      data_inizio: 2004-05-01
+      netcd: 222
+      statcd: 14
+      tipo_stazione: background
+      inquinanti:
+         - {id: 6, nome: PM10, inizio: 2005-03-01, eq: SW}
+         - {id: 8, nome: O3, inizio: 2017-01-01}
+   IT1701A:
+      nome: brindisi VIA DEI MILLE
+      tipo_area: suburban
+      id_stazione_n: 1607416
+      indirizzo: via dei mille
+      altitudine: 10.0
+      id_rete: IT236A
+      coordinate: 40.638060000000003 17.938330000000001
+      tipo_stazione: traffic
+      data_inizio: 2004-05-01
+      netcd: 222
+      statcd: 35
+      tipo_stazione: traffic
+      distanceJunction: 80.0
+      trafficVolume: 1000
+      heavy-dutyFraction: 0.2
+      trafficSpeed: 30.0
+      streetWidth: 10.0
+      heightFacades: 10.0
+      buildingDistance: 20.0
+      kerbDistance: 5.0
+      inquinanti:
+         - {id: 10, nome: Benzene, inizio: 2015-03-16}
+         - {id: 4, nome: NO2, inizio: 2005-05-01}
+         - {id: 5, nome: PM10, inizio: 2004-05-01, frequenza: orario, eq: SA}
+   IT1702A:
+      nome: brindisi VIA MAGELLANO
+      tipo_area: suburban
+      id_stazione_n: 1607415
+      indirizzo: via magellano
+      altitudine: 10.0
+      id_rete: IT236A
+      coordinate: 40.650829999999999 17.94361
+      tipo_stazione: background
+      data_inizio: 2004-05-01
+      netcd: 222
+      statcd: 37
+      tipo_stazione: background
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2004-05-01}
+         - {id: 5, nome: PM10, inizio: 2015-07-16, eq: SD}
+         - {id: 9, nome: PM2.5, inizio: 2015-07-16, eq: SD}
+         - {id: 12, nome: O3, inizio: 2017-01-01}
+   IT1704A:
+      nome: brindisi SISRI
+      tipo_area: suburban
+      id_stazione_n: 1607418
+      indirizzo: BRINDISI ZI
+      altitudine: 10.0
+      id_rete: IT236A
+      coordinate: 40.620280000000001 17.978059999999999
+      tipo_stazione: industrial
+      data_inizio: 2004-05-01
+      netcd: 222
+      statcd: 38
+      tipo_stazione: industrial
+      distanceSource: 3000.0
+      industrialEmissions: -9999.0
+      inquinanti:
+         - {id: 7, nome: BENZENE, inizio: 2014-01-01}
+         - {id: 6, nome: CO, inizio: 2004-05-01}
+         - {id: 4, nome: NO2, inizio: 2004-05-01}
+         - {id: 5, nome: PM10, inizio: 2004-05-01, frequenza: biorario, eq: SA}
+         - {id: 1, nome: SO2, inizio: 2004-05-01}
+   IT1817A:
+      nome: MONOPOLI
+      tipo_area: suburban
+      id_stazione_n: 1607288
+      indirizzo: viale Aldo Moro
+      altitudine: 10.0
+      id_rete: IT247A
+      coordinate: 40.956670000000003 17.290279999999999
+      tipo_stazione: traffic
+      data_inizio: 2006-07-01
+      netcd: 111
+      statcd: 42
+      tipo_stazione: traffic
+      distanceJunction: 100.0
+      trafficVolume: 1000
+      heavy-dutyFraction: 0.2
+      trafficSpeed: 30.0
+      streetWidth: 15.0
+      heightFacades: 10.0
+      buildingDistance: 30.0
+      kerbDistance: 20.0
+      inquinanti:
+         - {id: 6, nome: Benzene, inizio: 2009-07-01}
+         - {id: 5, nome: CO, inizio: 2009-07-01}
+         - {id: 4, nome: NO2, inizio: 2009-07-01}
+         - {id: 9, nome: PM10, inizio: 2009-07-01, frequenza: biorario, eq: SA}
+         - {id: 19, nome: PM2.5, inizio: 2009-07-01, eq: SW}
+   IT1818A:
+      nome: ALTAMURA
+      tipo_area: suburban
+      id_stazione_n: 1607286
+      indirizzo: via Golgota
+      altitudine: 100.0
+      id_rete: IT247A
+      coordinate: 40.827779999999997 16.560279999999999
+      tipo_stazione: traffic
+      data_inizio: 2006-07-01
+      netcd: 111
+      statcd: 43
+      tipo_stazione: traffic
+      distanceJunction: 50.0
+      trafficVolume: 2000
+      heavy-dutyFraction: 0.3
+      trafficSpeed: 30.0
+      streetWidth: 10.0
+      heightFacades: 10.0
+      buildingDistance: 20.0
+      kerbDistance: 10.0
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2009-07-01}
+         - {id: 1, nome: O3, inizio: 2009-07-01}
+         - {id: 9, nome: PM10, inizio: 2009-07-01, frequenza: biorario, fine: 2016-10-13, eq: SD}
+         - {id: 9, nome: PM10, inizio: 2016-10-14, eq: SD}
+         - {id: 19, nome: PM2.5, inizio: 2017-01-01, eq: SD}
+   IT1822A:
+      nome: ANDRIA
+      tipo_area: urban
+      id_stazione_n: 1607285
+      indirizzo: via vaccina
+      altitudine: 10.0
+      id_rete: IT247A
+      coordinate: 41.231670000000001 16.29167
+      tipo_stazione: traffic
+      data_inizio: 2006-07-01
+      netcd: 111
+      statcd: 44
+      tipo_stazione: traffic
+      distanceJunction: 300.0
+      trafficVolume: 1000
+      heavy-dutyFraction: 0.1
+      trafficSpeed: 30.0
+      streetWidth: 6.0
+      heightFacades: 15.0
+      buildingDistance: 20.0
+      kerbDistance: 5.0
+      inquinanti:
+         - {id: 21, nome: BENZENE, inizio: 2009-07-01}
+         - {id: 4, nome: NO2, inizio: 2009-07-01}
+         - {id: 9, nome: PM10, inizio: 2009-07-01, frequenza: biorario, fine: 2016-10-11, eq: SD}
+         - {id: 9, nome: PM10, inizio: 2016-10-12, eq: SD}
+         - {id: 19, nome: PM2.5, inizio: 2017-01-01, eq: SD}
+   IT1823A:
+      nome: CASAMASSIMA
+      tipo_area: suburban
+      id_stazione_n: 1607287
+      indirizzo: via Lapenna
+      altitudine: 100.0
+      id_rete: IT247A
+      coordinate: 40.953330000000001 16.919720000000002
+      tipo_stazione: background
+      data_inizio: 2006-07-01
+      netcd: 111
+      statcd: 41
+      tipo_stazione: background
+      inquinanti:
+         - {id: 3, nome: NO2, inizio: 2009-07-01}
+         - {id: 1, nome: NOX, inizio: 2009-07-01}
+         - {id: 15, nome: O3, inizio: 2013-04-01}
+         - {id: 4, nome: PM10, inizio: 2009-07-01, frequenza: biorario, fine: 2016-10-12, eq: SD}
+         - {id: 4, nome: PM10, inizio: 2016-10-13, eq: SD}
+         - {id: 14, nome: PM2.5, inizio: 2017-01-01, eq: SD}
+   IT1932A:
+      nome: GARIGLIANO
+      tipo_area: urban
+      id_stazione_n: 1607585
+      indirizzo: Via Garigliano
+      altitudine: 58.0
+      id_rete: IT229A
+      coordinate: 40.364440000000002 18.17306
+      tipo_stazione: traffic
+      data_inizio: 2008-01-01
+      netcd: 222
+      statcd: 39
+      tipo_stazione: traffic
+      distanceJunction: 200.0
+      trafficVolume: 3000
+      heavy-dutyFraction: 0.2
+      trafficSpeed: 40.0
+      streetWidth: 10.0
+      heightFacades: 15.0
+      buildingDistance: 10.0
+      kerbDistance: 10.0
+      inquinanti:
+         - {id: 5, nome: Benzene, inizio: 2008-01-01}
+         - {id: 4, nome: CO, inizio: 2008-01-01}
+         - {id: 3, nome: NO2, inizio: 2008-01-01}
+         - {id: 17, nome: PM10, inizio: 2008-01-01, eq: SW}
+         - {id: 19, nome: PM2.5, inizio: 2009-09-01, eq: SW}
+         - {id: 5018, nome: As, inizio: 2013-01-01}
+         - {id: 5014, nome: Cd, inizio: 2013-01-01}
+         - {id: 5015, nome: Ni, inizio: 2013-01-01}
+         - {id: 5012, nome: Pb, inizio: 2013-01-01}
+         - {id: 5029, nome: BaP, inizio: 2013-01-01}
+   IT1953A:
+      nome: La Porta
+      tipo_area: suburban
+      id_stazione_n: 1607587
+      indirizzo: VIA LA PORTA
+      altitudine: 50.0
+      id_rete: IT237A
+      coordinate: 40.168050000000001 18.17361
+      tipo_stazione: industrial
+      data_inizio: 2009-01-01
+      netcd: 222
+      statcd: 48
+      tipo_stazione: industrial
+      distanceSource: 1000.0
+      industrialEmissions: -9999.0
+      inquinanti:
+         - {id: 5, nome: CO, inizio: 2009-01-01}
+         - {id: 3, nome: NO2, inizio: 2009-01-01}
+         - {id: 4, nome: O3, inizio: 2009-01-01}
+         - {id: 7, nome: PM2.5, inizio: 2009-01-01, eq: SW}
+         - {id: 17, nome: PM10, inizio: 2017-01-18, frequenza: biorario, eq: SA}
+   IT2003A:
+      nome: stadio casardi
+      tipo_area: urban
+      id_stazione_n: 1607291
+      indirizzo: via casardi
+      altitudine: 15.0
+      id_rete: IT259A
+      coordinate: 41.316670000000002 16.286110000000001
+      tipo_stazione: background
+      data_inizio: 2010-01-01
+      netcd: 111
+      statcd: 57
+      tipo_stazione: background
+      inquinanti:
+         - {id: 12, nome: Benzene, inizio: 2014-01-01}
+         - {id: 3, nome: NO2, inizio: 2010-10-01}
+         - {id: 4, nome: O3, inizio: 2010-10-01}
+         - {id: 10, nome: PM10, inizio: 2014-01-01, eq: SD}
+         - {id: 11, nome: PM2.5, inizio: 2014-01-01, eq: SD}
+         - {id: 5029, nome: BaP, inizio: 2014-01-01}
+         - {id: 5012, nome: Pb, inizio: 2015-01-01}
+         - {id: 5015, nome: Ni, inizio: 2014-01-01}
+         - {id: 5018, nome: As, inizio: 2014-01-01}
+         - {id: 5014, nome: Cd, inizio: 2014-01-01}
+   IT2018A:
+      nome: Filzi
+      tipo_area: suburban
+      id_stazione_n: 1607420
+      indirizzo: via Fabio Filzi
+      altitudine: 139.0
+      id_rete: IT254A
+      coordinate: 40.527500000000003 17.587499999999999
+      tipo_stazione: traffic
+      data_inizio: 2010-01-01
+      netcd: 222
+      statcd: 52
+      tipo_stazione: traffic
+      distanceJunction: 100.0
+      trafficVolume: 500
+      heavy-dutyFraction: 0.1
+      trafficSpeed: 20.0
+      streetWidth: 10.0
+      heightFacades: 10.0
+      buildingDistance: 10.0
+      kerbDistance: 20.0
+      inquinanti:
+         - {id: 8, nome: Benzene, inizio: 2010-01-01}
+         - {id: 3, nome: NO2, inizio: 2010-01-01}
+         - {id: 7, nome: PM10, inizio: 2010-01-01, frequenza: orario, eq: IC}
+   IT2019A:
+      nome: Rosati
+      tipo_area: urban
+      id_stazione_n: 1607182
+      indirizzo: via Rosati 139
+      altitudine: 76.0
+      id_rete: IT223A
+      coordinate: 41.453890000000001 15.547779999999999
+      tipo_stazione: background
+      data_inizio: 2011-02-02
+      netcd: 111
+      statcd: 123
+      tipo_stazione: background
+      inquinanti:
+         - {id: 6, nome: CO, inizio: 2011-02-08}
+         - {id: 4, nome: NO2, inizio: 2011-02-08}
+         - {id: 14, nome: PM10, inizio: 2011-02-08, eq: SD}
+         - {id: 16, nome: PM2.5, inizio: 2015-02-13, eq: SD}
+         - {id: 2, nome: NOX, inizio: 2017-01-01}
+         - {id: 5029, nome: BaP, inizio: 2013-01-01}
+         - {id: 5012, nome: Pb, inizio: 2013-01-01}
+         - {id: 5015, nome: Ni, inizio: 2013-01-01}
+         - {id: 5018, nome: As, inizio: 2013-01-01}
+         - {id: 5014, nome: Cd, inizio: 2013-01-01}
+   IT2021A:
+      nome: Massafra
+      tipo_area: urban
+      id_stazione_n: 1607390
+      indirizzo: via Frappietro
+      altitudine: 118.0
+      id_rete: IT230A
+      coordinate: 40.591940000000001 17.115829999999999
+      tipo_stazione: traffic
+      data_inizio: 2010-04-01
+      netcd: 333
+      statcd: 55
+      tipo_stazione: traffic
+      distanceJunction: 50.0
+      trafficVolume: 100
+      heavy-dutyFraction: 0.1
+      trafficSpeed: 30.0
+      streetWidth: 10.0
+      heightFacades: 10.0
+      buildingDistance: 20.0
+      kerbDistance: 30.0
+      inquinanti:
+         - {id: 22, nome: Benzene, inizio: 2014-01-01}
+         - {id: 5, nome: NO2, inizio: 2014-01-01}
+         - {id: 2, nome: SO2, inizio: 2014-01-01}
+         - {id: 11, nome: PM10, inizio: 2017-01-01, frequenza: biorario, eq: SA}
+   IT2044A:
+      nome: LIBERTINI
+      tipo_area: urban
+      id_stazione_n: 1607590
+      indirizzo: piazza libertini
+      altitudine: 50.0
+      id_rete: IT229A
+      coordinate: 40.351939999999999 18.176670000000001
+      tipo_stazione: traffic
+      data_inizio: 2010-01-01
+      netcd: 222
+      statcd: 72
+      tipo_stazione: traffic
+      distanceJunction: 100.0
+      trafficVolume: 3000
+      heavy-dutyFraction: 0.2
+      trafficSpeed: 30.0
+      streetWidth: 10.0
+      heightFacades: 10.0
+      buildingDistance: 10.0
+      kerbDistance: 10.0
+      inquinanti:
+         - {id: 6, nome: Benzene, inizio: 2012-01-01}
+         - {id: 5, nome: CO, inizio: 2012-01-01}
+         - {id: 4, nome: NO2, inizio: 2012-01-01}
+         - {id: 31, nome: PM10, inizio: 2015-07-16, eq: SD}
+         - {id: 9, nome: PM2.5, inizio: 2015-07-16, eq: SD}
+   IT2051A:
+      nome: Carbonara
+      tipo_area: suburban
+      id_stazione_n: 1607295
+      indirizzo: via Francesco Pepe C/o CD 8 Giovanni Paolo  II
+      altitudine: 130.0
+      id_rete: IT218A
+      coordinate: 41.076943999999997 16.865832999999999
+      tipo_stazione: background
+      data_inizio: 2011-10-06
+      netcd: 111
+      statcd: 35
+      tipo_stazione: background
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2011-10-06}
+         - {id: 5, nome: PM10, inizio: 2011-10-06, frequenza: biorario, eq: SA}
+   IT2058A:
+      nome: CUS
+      tipo_area: suburban
+      id_stazione_n: 1607296
+      indirizzo: LUNGOMARE STARITA
+      altitudine: 5.0
+      id_rete: IT218A
+      coordinate: 41.134700000000002 16.84526
+      tipo_stazione: background
+      data_inizio: 2012-01-01
+      netcd: 111
+      statcd: 32
+      tipo_stazione: background
+      inquinanti:
+         - {id: 3, nome: NO2, inizio: 2013-01-01}
+         - {id: 14, nome: O3, inizio: 2013-01-01}
+         - {id: 4, nome: PM10, inizio: 2013-01-01, eq: SW}
+   IT2137A:
+      nome: PERRINO
+      tipo_area: suburban
+      id_stazione_n: 1607422
+      indirizzo: rione perrino
+      altitudine: 20.0
+      id_rete: IT269A
+      coordinate: 40.631390000000003 17.954719999999998
+      tipo_stazione: background
+      data_inizio: 2013-01-01
+      netcd: 222
+      statcd: 59
+      tipo_stazione: background
+      inquinanti:
+         - {id: 3, nome: NO2, inizio: 2014-01-01}
+         - {id: 6, nome: PM10, inizio: 2014-01-01, frequenza: biorario, eq: SA}
+   IT2139A:
+      nome: TERMINAL PASSEGGERI
+      tipo_area: suburban
+      id_stazione_n: 1607424
+      indirizzo: terminal passeggeri
+      altitudine: 20.0
+      id_rete: IT270A
+      coordinate: 40.645829999999997 17.960550000000001
+      tipo_stazione: industrial
+      data_inizio: 2013-01-01
+      data_fine: 2018-01-01
+      netcd: 222
+      statcd: 3
+      tipo_stazione: industrial
+      distanceSource: 3000.0
+      industrialEmissions: 50.0
+      inquinanti:
+         - {id: 25, nome: BENZENE, inizio: 2013-01-01}
+         - {id: 1, nome: CO, inizio: 2014-01-01}
+         - {id: 5, nome: NO2, inizio: 2014-01-01}
+         - {id: 6, nome: O3, inizio: 2014-01-01}
+         - {id: 22, nome: PM10, inizio: 2013-01-01, eq: SD}
+         - {id: 23, nome: PM2.5, inizio: 2013-01-01, eq: SD}
+         - {id: 2, nome: SO2, inizio: 2014-01-01}
+   IT2141A:
+      nome: Posta del Principe
+      tipo_area: rural
+      id_stazione_n: 1607188
+      indirizzo: posta del principe
+      altitudine: 150.0
+      id_rete: IT263A
+      coordinate: 41.630830000000003 15.386670000000001
+      tipo_stazione: background
+      data_inizio: 2013-01-01
+      netcd: 111
+      statcd: 1
+      tipo_stazione: background
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2013-01-01}
+         - {id: 2, nome: NOX, inizio: 2013-01-01}
+         - {id: 5, nome: O3, inizio: 2013-01-01}
+         - {id: 8, nome: PM10, inizio: 2013-01-01, eq: SD}
+         - {id: 9, nome: PM2.5, inizio: 2013-01-01, eq: SD}
+   IT2142A:
+      nome: Azienda Russo
+      tipo_area: rural
+      id_stazione_n: 1607189
+      indirizzo: azienda russo
+      altitudine: 150.0
+      id_rete: IT263A
+      coordinate: 41.546660000000003 15.44083
+      tipo_stazione: background
+      data_inizio: 2013-01-01
+      netcd: 111
+      statcd: 2
+      tipo_stazione: background
+      inquinanti:
+         - {id: 3, nome: NO2, inizio: 2013-01-01}
+         - {id: 1, nome: NOX, inizio: 2013-01-01}
+         - {id: 4, nome: O3, inizio: 2013-01-01}
+         - {id: 5, nome: PM10, inizio: 2013-01-01, eq: SD}
+         - {id: 6, nome: PM2.5, inizio: 2013-01-01, eq: SD}
+   IT2143A:
+      nome: Monopoli Italgreen
+      tipo_area: suburban
+      id_stazione_n: 1607297
+      indirizzo: Via Cosimo Pisonio
+      altitudine: 15.0
+      id_rete: IT271A
+      coordinate: 40.961390000000002 17.28417
+      tipo_stazione: traffic
+      data_inizio: 2012-09-01
+      netcd: 111
+      statcd: 45
+      tipo_stazione: traffic
+      distanceJunction: 50.0
+      trafficVolume: 500
+      heavy-dutyFraction: 0.1
+      trafficSpeed: 30.0
+      buildingDistance: 15.0
+      streetWidth: 10.0
+      heightFacades: 6.0
+      kerbDistance: 5.0
+      inquinanti:
+         - {id: 7, nome: BENZENE, inizio: 2014-01-01}
+         - {id: 3, nome: NO2, inizio: 2014-01-01}
+         - {id: 5, nome: PM10, inizio: 2015-01-09, eq: SD}
+         - {id: 6, nome: PM2.5, inizio: 2014-01-01, eq: SD}
+   IT2144A:
+      nome: EN02 - ass. ecologia
+      tipo_area: suburban
+      id_stazione_n: 1607298
+      indirizzo: viale delle magnolie, 6
+      altitudine: 40.0
+      id_rete: IT272A
+      coordinate: 41.107778000000003 16.766110999999999
+      tipo_stazione: industrial
+      data_inizio: 2009-01-01
+      netcd: -1
+      statcd: 27051
+      tipo_stazione: industrial
+      distanceSource: 1000.0
+      industrialEmissions: 90.0
+      inquinanti:
+         - {id: 34015, nome: CO, inizio: 2010-01-01}
+         - {id: 34007, nome: NO2, inizio: 2010-01-01}
+         - {id: 34016, nome: O3, inizio: 2010-01-01}
+         - {id: 34005, nome: PM10, inizio: 2010-01-01, frequenza: orario, eq: TF}
+         - {id: 34030, nome: PM2.5, inizio: 2010-01-01, frequenza: orario, eq: TF}
+   IT2145A:
+      nome: EN03 - VIGILI URBANI
+      tipo_area: urban
+      id_stazione_n: 1607299
+      indirizzo: sede vigili urbani
+      altitudine: 55.0
+      id_rete: IT272A
+      coordinate: 41.087220000000002 16.781669999999998
+      tipo_stazione: industrial
+      data_inizio: 2009-01-01
+      netcd: -1
+      statcd: 27052
+      tipo_stazione: industrial
+      distanceSource: 1000.0
+      industrialEmissions: 90.0
+      inquinanti:
+         - {id: 34015, nome: CO, inizio: 2010-01-01}
+         - {id: 34007, nome: NO2, inizio: 2010-01-01}
+         - {id: 34005, nome: PM10, inizio: 2017-05-05, frequenza: orario, eq: SW}
+   IT2146A:
+      nome: EN04 - SAN PAOLO
+      tipo_area: suburban
+      id_stazione_n: 1607201
+      indirizzo: via alto adige
+      altitudine: 35.0
+      id_rete: IT272A
+      coordinate: 41.114440000000002 16.787780000000001
+      tipo_stazione: industrial
+      data_inizio: 2010-01-01
+      netcd: -1
+      statcd: 27053
+      tipo_stazione: industrial
+      distanceSource: 2000.0
+      industrialEmissions: 90.0
+      inquinanti:
+         - {id: 34015, nome: CO, inizio: 2010-01-01}
+         - {id: 34007, nome: NO2, inizio: 2010-01-01}
+         - {id: 34005, nome: PM10, inizio: 2010-01-01, frequenza: orario, eq: TF}
+   IT2148A:
+      nome: Ceglie Messapica
+      tipo_area: suburban
+      id_stazione_n: 1607426
+      indirizzo: ceglie messapica
+      altitudine: 100.0
+      id_rete: IT273A
+      coordinate: 40.649169999999998 17.512499999999999
+      tipo_stazione: background
+      data_inizio: 2014-04-01
+      netcd: 222
+      statcd: 55
+      tipo_stazione: background
+      inquinanti:
+         - {id: 6, nome: Benzene, inizio: 2014-01-01}
+         - {id: 5, nome: CO, inizio: 2014-04-01}
+         - {id: 4, nome: NO2, inizio: 2014-04-01}
+         - {id: 12, nome: PM10, inizio: 2014-01-01, frequenza: biorario, eq: SA}
+         - {id: 11, nome: PM2.5, inizio: 2014-04-01, frequenza: orario, eq: ME}
+         - {id: 1, nome: SO2, inizio: 2014-04-01}
+   IT2149A:
+      nome: Cisternino
+      tipo_area: rural
+      id_stazione_n: 1607427
+      indirizzo: cisterinino
+      altitudine: 200.0
+      id_rete: IT273A
+      coordinate: 40.742780000000003 17.41583
+      tipo_stazione: background
+      data_inizio: 2014-04-01
+      netcd: 222
+      statcd: 56
+      tipo_stazione: background
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2014-04-01}
+         - {id: 5, nome: O3, inizio: 2014-04-01}
+         - {id: 6, nome: PM10, inizio: 2014-04-01, frequenza: biorario, eq: SA}
+         - {id: 1, nome: SO2, inizio: 2014-04-01}
+   IT2150A:
+      nome: Surbo ENEL
+      tipo_area: rural
+      id_stazione_n: 1607591
+      indirizzo: Via B. Croce
+      altitudine: 100.0
+      id_rete: IT273A
+      coordinate: 40.403329999999997 18.125
+      tipo_stazione: background
+      data_inizio: 2014-01-01
+      netcd: 222
+      statcd: 20
+      tipo_stazione: background
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2014-01-01}
+         - {id: 5, nome: PM10, inizio: 2014-01-01, frequenza: biorario, eq: SA}
+         - {id: 1, nome: SO2, inizio: 2014-01-01}
+   IT2151A:
+      nome: Torchiarolo ENEL
+      tipo_area: suburban
+      id_stazione_n: 1607428
+      indirizzo: via fanin
+      altitudine: 50.0
+      id_rete: IT273A
+      coordinate: 40.489440000000002 18.047219999999999
+      tipo_stazione: background
+      data_inizio: 2014-01-01
+      netcd: 222
+      statcd: 54
+      tipo_stazione: background
+      inquinanti:
+         - {id: 4, nome: NO2, inizio: 2014-01-01}
+         - {id: 5, nome: PM10, inizio: 2014-01-01, frequenza: biorario, eq: SA}
+         - {id: 6, nome: PM2.5, inizio: 2015-01-01, frequenza: orario, eq: ME}
+         - {id: 1, nome: SO2, inizio: 2014-01-01}
