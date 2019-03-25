@@ -1,4 +1,4 @@
-publiccode-yaml-version: "http://w3id.org/publiccode/version/0.1"
+publiccodeYmlVersion: "0.2"
 
 name: InfoAria Arpa Puglia
 applicationSuite: InfoAria
@@ -13,33 +13,33 @@ platforms:
   - windows
   - mac
 
-tags:
-  - air pollutant
-  - infoaria
-  - eea
+categories:
+  - data-visualization
+  - data-analytics
+  - data-collection 
 
 usedBy:
   - A.R.P.A. Puglia
 
 developmentStatus: beta
 
-softwareType:
-  type: "standalone"
+softwareType: standalone/desktop
 
 intendedAudience:
-  onlyFor:
-    - environmenteal agencies
   countries:
     - it
 
 description:
-  eng:
+  en:
+    genericName: Gestione Centraline Aria
     localisedName: InfoAria Arpa Puglia
     shortDescription: "A really interesting software."
     longDescription: >
           Very long description of this software, also split
           on multiple rows. You should note what the software
           is and why one should need it.
+    features:
+      - Generazione XML
 
 legal:
   license: GPL-3.0-or-later
@@ -56,16 +56,21 @@ maintenance:
       phone: +39 080 5460358
 
 localisation:
-  localisationReady: no
+  localisationReady: false 
+  availableLanguages:
+    - it
     
-dependencies:
+dependsOn:
   open:
     - name: YAML
-      optional: no
+      optional: false
 
 it:
-  accessibile: yes
-  interoperabile: yes
+  countryExtensionVersion: "0.2"
+
+  conforme:
+    lineeGuidaDesign: true
+    modelloInteroperabilita: true
 
   riuso:
     codiceIPA: ARPAP
