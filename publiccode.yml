@@ -1,76 +1,85 @@
-publiccodeYmlVersion: "0.2"
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
 
+publiccodeYmlVersion: '0.2'
 name: InfoAria Arpa Puglia
 applicationSuite: InfoAria
-url: "https://github.com/arpa-puglia/infoaria.git"
-landingURL: "https://github.com/arpa-puglia/infoaria"
-
-softwareVersion: "1.0"
-releaseDate: "2018-06-01"
-
+url: 'https://github.com/arpa-puglia/infoaria.git'
+landingURL: 'https://github.com/arpa-puglia/infoaria'
+softwareVersion: dev
+releaseDate: '2018-06-01'
 platforms:
   - linux
   - windows
   - mac
-
 categories:
   - data-visualization
   - data-analytics
-  - data-collection 
-
+  - data-collection
 usedBy:
   - A.R.P.A. Puglia
-
 developmentStatus: beta
-
 softwareType: standalone/desktop
-
-intendedAudience:
-  countries:
-    - it
-
-description:
-  en:
-    genericName: Gestione Centraline Aria
-    localisedName: InfoAria Arpa Puglia
-    shortDescription: "A really interesting software."
-    longDescription: >
-          Very long description of this software, also split
-          on multiple rows. You should note what the software
-          is and why one should need it.
-    features:
-      - Generazione XML
-
-legal:
-  license: GPL-3.0-or-later
-  mainCopyrightOwner: Nicola Inchingolo
-  repoOwner: Nicola Inchingolo
-
-maintenance:
-  type: "internal"
-
-  contacts:
-    - name: Nicola Inchingolo
-      email: "n.inchingolo@arpa.puglia.it"
-      affiliation: A.R.P.A. Puglia
-      phone: +39 080 5460358
-
-localisation:
-  localisationReady: false 
-  availableLanguages:
-    - it
-    
 dependsOn:
   open:
     - name: YAML
       optional: false
-
+maintenance:
+  type: internal
+  contacts:
+    - name: Nicola Inchingolo
+      email: n.inchingolo@arpa.puglia.it
+      affiliation: A.R.P.A. Puglia
+      phone: +39 080 5460358
+legal:
+  license: GPL-3.0-or-later
+  mainCopyrightOwner: Nicola Inchingolo
+  repoOwner: Nicola Inchingolo
+intendedAudience:
+  countries:
+    - it
+localisation:
+  localisationReady: false
+  availableLanguages:
+    - it
 it:
-  countryExtensionVersion: "0.2"
-
+  countryExtensionVersion: '0.2'
   conforme:
     lineeGuidaDesign: true
     modelloInteroperabilita: true
-
   riuso:
     codiceIPA: ARPAP
+description:
+  it:
+    genericName: Gestione Centraline Aria
+    localisedName: InfoAria Arpa Puglia
+    shortDescription: Software per la gestione delle centraline dell'aria
+    longDescription: >+
+      A partire dal file di configurazione InfoAria-centraline.yml viene
+      generato il file D\_output.xml eseguendo lo script D\_test.pl. I percorsi
+      di questi file si trovano all'interno del file D.pm nelle variabili:
+
+
+      my $CONFIG\_CENTRALINE\_FILE = 'InfoAria-Centraline.yml';
+
+      my $D\_FILE\_NAME = "D\_output.xml";
+
+
+      All'interno del file D\_test.pl va modificato l'anno:
+
+
+      InfoAria::D::generaXml(2018);
+
+
+      Lo script è stato testato su Windows 7 con ActivePerl 5.24 [build 2402
+      401626]
+
+      Per installare le dipendenze usare il seguente comando (se si ha
+      ActivePerl):
+
+
+      ppm install YAML XML-Writer Net
+
+    features:
+      - Generazione XML
