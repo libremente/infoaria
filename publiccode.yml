@@ -54,7 +54,7 @@ description:
   it:
     genericName: Gestione Centraline Aria
     localisedName: InfoAria Arpa Puglia
-    shortDescription: Software per la gestione delle centraline dell'aria
+    shortDescription: Software per la creazione del dataset xml D delle centraline dell'aria da inviare all'agenzia europea per l'ambiente (EEA)
     longDescription: >+
       A partire dal file di configurazione InfoAria-centraline.yml viene
       generato il file D_output.xml eseguendo lo script D_test.pl. I percorsi
