@@ -55,7 +55,7 @@ description:
     genericName: Gestione Centraline Aria
     localisedName: InfoAria Arpa Puglia
     shortDescription: Software per la creazione del dataset xml D delle centraline dell'aria da inviare all'agenzia europea per l'ambiente (EEA)
-    longDescription: >+
+    longDescription: |
       Il codice serve a generare il file xml contenente il dataset D previsto
       dalla EEA (agenzia per l'ambiente europea) che ogni Arpa Regionale deve
       inviare ad ISPRA tramite FTP.
@@ -67,14 +67,18 @@ description:
       A partire dal file di configurazione InfoAria-centraline.yml viene
       generato il file D_output.xml eseguendo lo script D_test.pl.  
       I percorsi di questi file si trovano all'interno del file D.pm nelle variabili:  
-      ~~~~
+
+      ~~~~  
       my $CONFIG_CENTRALINE_FILE = 'InfoAria-Centraline.yml';
-      my $D_FILE_NAME = "D_output.xml";
-      ~~~~
+      my $D_FILE_NAME = "D_output.xml";  
+      ~~~~  
+
       All'interno del file D_test.pl va modificato l'anno:  
-      ~~~~
-      InfoAria::D::generaXml(2018);
-      ~~~~
+
+      ~~~~  
+      InfoAria::D::generaXml(2018);   
+      ~~~~  
+
       Lo script è stato testato su Windows 7 con ActivePerl 5.24 [build 2402
       401626]
     features:
